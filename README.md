@@ -57,4 +57,4 @@ You can follow us on Twitter at [@recastai](https://twitter.com/recastai) for up
 
 ## Special thanks
 
-- [Meetup API](https://www.meetup.com/meetup_api/)
+- [Github API](https://developer.github.com/v3/)
