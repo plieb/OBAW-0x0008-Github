@@ -1,13 +1,13 @@
-[logo]: https://github.com/plieb/OBAW-0x0007-Meetup/blob/master/assets/OBAW%20-%20Week%200x0007.png "Meetup + Recast.AI"
-![Meetup + Recast.AI][logo]
+[logo]: https://github.com/plieb/OBAW-0x0008-Github/blob/master/assets/OBAW%20-%20Week%200x0008.png "Github + Recast.AI"
+![Github + Recast.AI][logo]
 
-This bot is part of the #[OBAW](https://github.com/plieb/OBAW) project - Week 0x0007 - Meetup
+This bot is part of the #[OBAW](https://github.com/plieb/OBAW) project - Week 0x0008 - Github
 
 Medium publication project page #[OBAW](https://medium.com/the-obaw-project)
 
-# Meetup Bot for Facebook Messenger using Recast.AI
+# Github Bot for Facebook Messenger using Recast.AI
 
-A [Meetup](https://www.meetup.com/)-powered bot using [Recast.AI](https://recast.ai) NLP and [Bot Connector](https://botconnector.recast.ai)
+A [Github](https://github.com/)-powered bot using [Recast.AI](https://recast.ai) NLP and [Bot Connector](https://botconnector.recast.ai)
 
 Follow the instructions below to create your own instance of the bot:
 
@@ -24,7 +24,7 @@ Follow the instructions below to create your own instance of the bot:
     - For **BC_BOT_ID** blank for now (filled at step 2)
     - For **BC_USER_TOKEN** blank for now (filled at step 2)
     - For **RE_BOT_TOKEN** blank for now (filled at step 3)
-    - For **MEETUP_API_KEY** blank for now (filled at step 4)
+    - For **GITHUB_PERSONAL_ACCESS_TOKEN** blank for now (filled at step 4)
 
 ## Step 2: Create your bot on Bot Connector
 
@@ -40,14 +40,14 @@ Follow the instructions below to create your own instance of the bot:
 ## Step 3: Get your Recast bot
 
 1. Make sure you are logged in to your [Recast.AI account](https://recast.ai/)
-1. Follow this link [Meetup Bot](https://recast.ai/pe/obaw-0x0007-meetup/learn) and fork the bot to your account
+1. Follow this link [Github Bot](https://recast.ai/pe/obaw-0x0008-github/learn) and fork the bot to your account
 1. Copy paste your `bot request access token` in the **Config Variables** section of your Heroku app to `RE_BOT_TOKEN`
 
 ## Step 4: Get your Recast bot
 
-1. Make sure you are logged in to your [Meetup account](https://www.meetup.com/)
-1. Follow this link [Meetup API](https://secure.meetup.com/meetup_api/key/) and get your API key
-1. Paste your `API Key` in the **Config Variables** section of your Heroku app to `MEETUP_API_KEY`
+1. Make sure you are logged in to your [Github account](https://github.com/)
+1. Follow this link [Github Tokens](https://github.com/settings/tokens) and generate an access token
+1. Paste your `Access Token` in the **Config Variables** section of your Heroku app to `GITHUB_PERSONAL_ACCESS_TOKEN`
 
 ## Author
 
