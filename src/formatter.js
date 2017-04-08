@@ -35,9 +35,9 @@ exports.formatCardsReplies = (cards) => {
       imageUrl: c.picture,
       buttons: [
         {
-          type: 'postback',
+          type: 'web_url',
           title: c.name,
-          value: c.payload,
+          value: c.link,
         },
       ],
     })

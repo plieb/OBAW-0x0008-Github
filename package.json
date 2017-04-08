@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon --exec babel-node -- src/server.js",
     "prod": "node lib/server.js",
-    "lint": "eslint src/",
+    "lint": "eslint src/*",
     "build": "babel src -d lib"
   },
   "author": "Recast",
@@ -31,7 +31,7 @@
     "babel-preset-stage-0": "^6.22.0",
     "babel-register": "^6.11.5",
     "eslint": "^3.2.0",
-    "eslint-config-zavatta": "^4.2.0",
+    "eslint-config-airbnb-base": "^2.0.0",
     "eslint-plugin-import": "^1.6.1",
     "nodemon": "^1.11.0"
   },
@@ -45,10 +45,13 @@
     ]
   },
   "eslintConfig": {
-    "extends": "zavatta",
+    "extends": "airbnb-base",
     "rules": {
-      "no-console": 0,
-      "callback-return": 0
+      "no-console":0,
+      "semi": [
+        2,
+        "never"
+      ]
     }
   }
 }
