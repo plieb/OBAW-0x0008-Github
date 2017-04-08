@@ -5,7 +5,12 @@ exports.formatMsg = msg => ({
   content: msg,
 })
 
-exports.formatQuickReplies = (quickRp, res) => {
+exports.formatImg = link => ({
+  type: 'picture',
+  content: link,
+})
+
+exports.formatQuickReplies = (quickRp, sentence) => {
   const elements = []
   quickRp.forEach((elem) => {
     elements.push({
@@ -16,7 +21,7 @@ exports.formatQuickReplies = (quickRp, res) => {
   return {
     type: 'quickReplies',
     content: {
-      title: `More information regarding ${res.value}`,
+      title: sentence,
       buttons: elements,
     },
   }
@@ -27,23 +32,12 @@ exports.formatCardsReplies = (cards) => {
   cards.forEach((c) => {
     elements.push({
       title: c.name,
-      subtitle: c.city,
       imageUrl: c.picture,
       buttons: [
         {
-          type: 'web_url',
-          title: 'More Information',
-          value: c.link,
-        },
-        {
           type: 'postback',
-          title: c.register.rsvp === 'yes' ? 'RSVP' : 'Unregister',
-          value: JSON.stringify({
-            text: c.register.rsvp === 'yes' ? 'I want to RSPV for this meetup' : 'I want to unsubscribe',
-            groupurl: c.register.groupurl,
-            id: c.register.id,
-            rsvp: c.register.rsvp,
-          }),
+          title: c.name,
+          value: c.payload,
         },
       ],
     })

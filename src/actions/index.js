@@ -1,7 +1,10 @@
 const actions = {
-  'find-events': require('./find-events'),
-  'get-upcoming': require('./get-upcoming'),
-  'register': require('./register'),
+  'give-ingredients': require('./give-ingredients'),
+  'gaspacho': require('./gaspacho'),
+  'yes': require('./yes'),
+  'shopping-done': require('./shopping-done'),
+  'next': require('./next'),
+  'laugh': require('./laugh'),
 }
 
 export default async function handleAction(res, payload) {
