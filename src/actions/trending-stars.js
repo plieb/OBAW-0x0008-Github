@@ -12,7 +12,7 @@ export default async function trendingStars(res) {
   console.log(language)
   console.log('======================================')
   replies.push(formatter.formatMsg(res.reply()))
-  const response = await agent('GET', `https://api.github.com/search/repositories?q=language:${language}&sort=stars&order=desc`)
+  const response = await agent('GET', `https://api.github.com/search/repositories?q=language:${language.value}&sort=stars&order=desc`)
   console.log('======================================')
   console.log(response)
   console.log('======================================')
