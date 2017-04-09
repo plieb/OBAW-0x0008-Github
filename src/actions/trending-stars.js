@@ -16,17 +16,17 @@ export default async function trendingStars(res) {
   console.log('======================================')
   console.log(response)
   console.log('======================================')
-  const repos = response.body.items.slice(0, 9)
+  const repos = response.body.items.slice(0, 10)
   console.log('======================================')
   console.log(repos)
   console.log('======================================')
-  for (const rep in repos) {
+  /*for (const rep in repos) {
     cardsReplies.push({
       name: rep.name,
       picture: rep.owner.avatar_url,
       link: rep.html_url,
     })
-  }
+  }*/
   replies.push(formatter.formatCardsReplies(cardsReplies))
   return replies
 }
