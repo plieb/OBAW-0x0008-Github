@@ -20,13 +20,13 @@ export default async function trendingStars(res) {
   console.log('======================================')
   console.log(repos)
   console.log('======================================')
-  /*for (const rep in repos) {
+  repos.forEach((rep) => {
     cardsReplies.push({
       name: rep.name,
       picture: rep.owner.avatar_url,
       link: rep.html_url,
     })
-  }*/
+  })
   replies.push(formatter.formatCardsReplies(cardsReplies))
   return replies
 }
