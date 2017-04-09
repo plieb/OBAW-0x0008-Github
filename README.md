@@ -7,47 +7,26 @@ Medium publication project page #[OBAW](https://medium.com/the-obaw-project)
 
 # Github Bot for Facebook Messenger using Recast.AI
 
-A [Github](https://github.com/)-powered bot using [Recast.AI](https://recast.ai) NLP and [Bot Connector](https://botconnector.recast.ai)
+A [Github](https://github.com/)-powered bot using [Recast.AI](https://recast.ai) NLP
 
 Follow the instructions below to create your own instance of the bot:
 
-## Step 1: Deploy the Bot
+## Step 1: Fork the bot on Github and Recast.AI
 
-1. Make sure you are logged in to the [Heroku Dashboard](https://dashboard.heroku.com/)
-1. Click the button below to deploy the Messenger bot on Heroku:
-
-    [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-1. Fill in the config variables as described.
-
-    - For **BC_USER_SLUG** blank for now (filled at step 2)
-    - For **BC_BOT_ID** blank for now (filled at step 2)
-    - For **BC_USER_TOKEN** blank for now (filled at step 2)
-    - For **RE_BOT_TOKEN** blank for now (filled at step 3)
-    - For **GITHUB_PERSONAL_ACCESS_TOKEN** blank for now (filled at step 4)
-
-## Step 2: Create your bot on Bot Connector
-
-1. Make sure you are logged in to your [Bot Connector account](https://botconnector.recast.ai/)
-1. Click the button **New Bot** and define the bot as follows
-
-    - Bot Name: Star Wars Bot
-    - Bot URL: enter your Heroku URL
-
-1. In **Settings** find your `slug`, `token` and `bot ID`. Copy paste those values in the **Config Variables** section of your Heroku app to `BC_USER_SLUG`, `BC_USER_TOKEN` and `BC_BOT_ID`
-1. Get back to your Bot Connector account and add a Messenger channel. Give it a name and follow step 1 to 4 in order to get your **Secret Key** & **Page Token**
-
-## Step 3: Get your Recast bot
-
+1. Make sure you are logged in to your [Github account](https://github.com/) and fork this repository
 1. Make sure you are logged in to your [Recast.AI account](https://recast.ai/)
-1. Follow this link [Github Bot](https://recast.ai/pe/obaw-0x0008-github/learn) and fork the bot to your account
-1. Copy paste your `bot request access token` in the **Config Variables** section of your Heroku app to `RE_BOT_TOKEN`
+1. Follow this link [Github Bot](https://recast.ai/pe/obaw-0x0008-github/train) and fork the bot to your account
 
-## Step 4: Get your Recast bot
+## Step 2: Connect your bot to Messenger with Bot Connector
 
-1. Make sure you are logged in to your [Github account](https://github.com/)
-1. Follow this link [Github Tokens](https://github.com/settings/tokens) and generate an access token
-1. Paste your `Access Token` in the **Config Variables** section of your Heroku app to `GITHUB_PERSONAL_ACCESS_TOKEN`
+1. In the `Run` tab under the `Bot Connector` section follow the steps to connect your bot to `Messenger`
+
+## Step 3: Host your bot with Bot Hosting
+
+1. In the `Run` tab under the `Bot Hosting` section link your [Github](https://github.com/) account to your [Recast.AI account](https://recast.ai/)
+1. Select the `OBAW-0x0008-Github` repository and click deploy
+
+You're all set !
 
 ## Author
 
