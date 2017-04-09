@@ -1,5 +1,5 @@
 const actions = {
-  'give-ingredients': require('./give-ingredients'),
+  'trending-stars': require('./trending-stars'),
   'gaspacho': require('./gaspacho'),
   'yes': require('./yes'),
   'shopping-done': require('./shopping-done'),
