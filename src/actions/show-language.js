@@ -8,13 +8,12 @@ export default async function showLanguage(res) {
 
   const replies = []
   const quickReplies = []
-  replies.push(formatter.formatMsg(res.reply()))
   languages.forEach((l) => {
     quickReplies.push({
       name: l,
-      value: `Show me the top starred repositories in ${l}`,
+      value: `Top starred repos in ${l}`,
     })
   })
-  replies.push(formatter.formatQuickReplies(quickReplies))
+  replies.push(formatter.formatQuickReplies(quickReplies,res.reply()))
   return replies
 }
