@@ -1,9 +1,6 @@
 const actions = {
   'trending-stars': require('./trending-stars'),
-  'gaspacho': require('./gaspacho'),
-  'yes': require('./yes'),
-  'shopping-done': require('./shopping-done'),
-  'next': require('./next'),
+  'trending-forks': require('./trending-forks'),
   'laugh': require('./laugh'),
 }
 
