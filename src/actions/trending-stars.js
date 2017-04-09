@@ -16,7 +16,7 @@ export default async function trendingStars(res) {
   console.log('======================================')
   console.log(response)
   console.log('======================================')
-  const repos = response.body.items.slice(0, 10)
+  const repos = response.body.items.slice(0, 9)
   console.log('======================================')
   console.log(repos)
   console.log('======================================')
